@@ -20,18 +20,7 @@ fs.mkdirSync(dir)
 
 const templates = {
   "index.ts": `export * from "./${componentName}"\n`,
-  [`${componentName}.tsx`]: `import { apply, tw } from "@components/util"
-
-const base = {
-  container: apply\`flex\`,
-}
-
-const colors = {
-  red: "text-red-500",
-  green: "text-green-500",
-}
-
-type Props = {
+  [`${componentName}.tsx`]: `type Props = {
   children: React.ReactNode
   color?: keyof typeof colors
   styles?: StyleOverride<keyof typeof base>
@@ -56,7 +45,6 @@ describe("${componentName}", () => {
 })
 `,
   [`${componentName}.stories.tsx`]: `import { ${componentName} } from "./${componentName}"
-import { tw } from "@components/util"
 
 export default {
   component: ${componentName},
