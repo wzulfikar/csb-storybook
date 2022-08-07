@@ -1,10 +1,8 @@
-import { FC } from "react";
-
 type Props = {
-  children: string;
+  children: React.ReactNode;
   onClick?: () => void;
 };
 
-export const Button: FC<Props> = ({ onClick, children }) => {
+export const Button = ({ onClick, children }: Props) => {
   return <button onClick={onClick}>{children}</button>;
 };
