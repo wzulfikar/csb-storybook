@@ -2,7 +2,10 @@
 
 Run Storybook in Codesandbox.
 
-### Assumptions
+- Demo: https://5og0p0.sse.codesandbox.io
+- Run your own Storybook: https://csb.app/s/github/wzulfikar/csb-storybook
+
+### Included
 
 - Typescript
 - Absolute path
