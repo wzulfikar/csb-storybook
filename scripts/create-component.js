@@ -44,7 +44,7 @@ describe("${componentName}", () => {
   })
 })
 `,
-  [`${componentName}.stories.tsx`]: `import { ${componentName} } from "./${componentName}"
+  [`${componentName}.stories.tsx`]: `import { ${componentName} } from "."
 
 export default {
   component: ${componentName},
